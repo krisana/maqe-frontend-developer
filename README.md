@@ -1,4 +1,4 @@
-<img width="200" style="max-width: 200px; width:100%" src="https://maqe.github.io/img/logo.svg">
+![MAQE](https://maqe.github.io/img/logo.svg)
 
 # MAQE Homework Challenges
 
