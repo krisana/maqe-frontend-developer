@@ -1,0 +1,50 @@
+body {
+  background-color: #eeeeee;
+}
+.main {
+  background-color: #eeeeee;
+  width: 100%;
+}
+
+.box-post {
+  background-color: #fff;
+  margin-bottom: 1.25rem;
+  box-shadow: 0px 3px 5px -2px rgb(0 0 0 / 20%);
+}
+
+.box-post.style2 {
+  background-color: #ccecff;
+}
+
+.box-post_header {
+  padding: 0.5rem 1.25rem;
+  border-bottom: 1px solid #dddddd;
+  display: flex;
+  align-items: center;
+}
+
+.box-post_header span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #f35827;
+  margin: 0 5px;
+}
+
+.box-post_header i {
+  font-size: 14px;
+  font-weight: normal;
+  color: #aaa;
+}
+
+.box-post_avartar {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.box-post_body {
+  padding: 1.25rem;
+}

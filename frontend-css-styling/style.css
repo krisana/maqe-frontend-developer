@@ -1,0 +1,103 @@
+/* 
+Time used: 1.30 hours
+Krisana Malaseeta
+Fontend CSS Styling test
+*/
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7f7f7;
+  height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+}
+
+.box {
+  width: 100%;
+  padding-top: 100%;
+  /* 1:1 Aspect Ratio */
+  position: relative;
+  border-radius: 20px;
+  border: 10px solid #67c3e9;
+  background: #ffffff;
+  overflow: hidden;
+  box-shadow: 14px 17px 20px -10px rgb(0 0 0 / 20%);
+}
+
+.box-body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 20px;
+  border: 10px solid #ffffff;
+  background: linear-gradient(180deg, #67c3e9, #9cd5d2);
+  padding: 5%;
+}
+
+.box-body::after {
+  content: "";
+  width: 55%;
+  height: 55%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background: rgb(255 255 255 / 10%);
+  z-index: 0;
+}
+
+.box-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: relative;
+}
+
+.box-col {
+  flex: 0 0 auto;
+  width: 50%;
+  padding: 5%;
+}
+
+.box-txt {
+  background: #f7f7f7;
+  -moz-box-shadow: inset 3px 5px 9px 0px rgb(0 0 0 / 30%);
+  -webkit-box-shadow: inset 3px 5px 9px 0px rgb(0 0 0 / 30%);
+  box-shadow: inset 3px 5px 9px 0px rgb(0 0 0 / 30%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  border: 1px solid #d9d9d9;
+}
+
+.box-txt h3 {
+  margin: 0;
+  color: #67c3e9;
+  font-size: 50px;
+  text-shadow: -1px -1px 0 #858585, 1px -1px 0 #858585, -1px 1px 0 #858585, 1px 1px 0 #858585;
+}
