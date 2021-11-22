@@ -26,7 +26,7 @@ function Posts(data) {
                       }}
                     />
                     <span>{author.name}</span>
-                    <i>posted on {moment(item.created_at).format('dddd, MMMM D, YYYY, h:mm')}</i>
+                    <i>posted on {moment(item.created_at).format('dddd, MMMM D, YYYY, HH:mm')}</i>
                   </div>
                   <div className="box-post_body">
                     <div className="row">
@@ -53,7 +53,7 @@ export default Posts
 
 
 export async function getStaticProps(context) {
-  const getPosts = await fetch(`https://maqe.github.io/json/posts.json`)
+  const getPosts = await fetch(`https://maqe.github.io/json/posts.json?author_id=2`)
   const posts = await getPosts.json()
   const getAuthors = await fetch(`https://maqe.github.io/json/authors.json`)
   const authors = await getAuthors.json()
